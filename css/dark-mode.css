@@ -1,0 +1,121 @@
+:root{
+  --dark-color: #18191a;
+}
+
+/* Dark mode Button Css */
+.dark-mode {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 999;
+}
+body.dark {
+  background-color: var(--dark-color);
+  color: #fff !important;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moon {
+  color: #f1c40f;
+  font-size: 18px;
+}
+
+.sun {
+  color: #f39c12;
+  font-size: 18px;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+/* Body Dark Mode */
+.dark .header {
+  background-color: var(--dark-color);
+}
+.dark .main-nav-link {
+  color: #fff;
+}
+.dark .main-nav-link:hover {
+  color: var(--primary-color);
+}
+.dark .main-nav-link.nav-cta:hover {
+  color: #fff;
+}
+.dark .pricing-plan-complete {
+  background-color: var(--primary-color);
+}
+.dark .plan-sign-up a {
+  background-color: var(--btnHover-color);
+}
+.dark .plan-sign-up a:hover {
+  background-color: #fdb700;
+}
+.dark .pricing-plan-complete::after {
+  background-color: var(--btnHover-color);
+}
+.dark .feature-title {
+  color: var(--primary-color);
+}
+.dark .testimonial-name {
+  color: var(--primary-color);
+}
+.dark .subheading {
+  color: var(--primary-color);
+}
+.dark .plan-details {
+  color: var(--primary-color);
+}
+.dark .plan-price {
+  color: #fff;
+}
+.dark .list-icon {
+  color: var(--btnHover-color);
+}
+.dark .list-icon.one {
+  color: var(--primary-color);
+}
+.dark .heading-primary {
+  color: #fff;
+}
+.dark .heading-tertiary {
+  color: #fff;
+}
+.dark .heading-secondary {
+  color: #fff !important;
+}
+.dark .section-testimonials{
+  background-color: var(--dark-color);
+}
+.dark .section-hero {
+  background-color: var(--dark-color);
+}
